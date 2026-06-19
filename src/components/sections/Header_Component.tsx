@@ -1,17 +1,31 @@
 'use client'
-/* eslint-disable @next/next/no-img-element */
-
+ 
 import { useState } from "react"
+import Image from "next/image"
 import Button from "../Button"
-
+ 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+ 
     return (
         <div className="lg:h-[108px] py-4 lg:py-[29px] px-4 lg:px-[58px] max-w-[1440px] w-full mx-auto flex justify-between items-center relative z-50">
             <div className="flex gap-[121px]">
-                <img src="/Logo.svg" alt="Logo" className="hidden lg:block" />
-                <img src="/RR_logo.svg" alt="Logo" className="block lg:hidden h-[32px]" />
+                <Image
+                    src="/Logo.svg"
+                    alt="Remote Recruit Logo"
+                    width={124}
+                    height={50}
+                    priority
+                    className="hidden lg:block"
+                />
+                <Image
+                    src="/RR_logo.svg"
+                    alt="Remote Recruit Logo"
+                    width={40}
+                    height={32}
+                    priority
+                    className="block lg:hidden h-[32px]"
+                />
             </div>
 
             <div className="hidden lg:flex gap-[38px]">

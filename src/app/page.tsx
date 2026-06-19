@@ -7,6 +7,7 @@ import Pricing_Section_Mobile from "@/components/sections/Pricing_Section_Mobile
 import FAQ_Section from "@/components/sections/FAQ_Section";
 import bodyData from "@/data/body_data.json";
 import Banner_section from "@/components/sections/Banner_section";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <FAQ_Section />
       <Pricing_Section_Mobile />
       <Footer_Section />
+      <ScrollToTopButton />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 'use client'
-/* eslint-disable @next/next/no-img-element */
 
+import Image from "next/image";
 import Icon from "../Icon_Component";
 import socials from "@/data/socials.json";
 import PackageCard from "../PackageCard";
@@ -34,7 +34,20 @@ export default function Footer_Section() {
 
             <div className="responsive-box flex-1 lg:flex-none flex flex-col lg:flex-row gap-10 lg:gap-0 justify-center lg:justify-between items-center lg:items-start pt-12 lg:pt-0 mb-0 lg:mb-[6vw]"
             >
-                <img src="/Logo.svg" alt="Remote Recruit Logo" className="w-[180px] lg:w-[12.8vw] lg:h-[5.139vw] max-w-[184.32px] max-h-[74px] cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} />
+                <button
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-cyan rounded-lg transition-all cursor-pointer"
+                    aria-label="Scroll to top"
+                >
+                    <Image
+                        src="/Logo.svg"
+                        alt="Remote Recruit Logo"
+                        width={184}
+                        height={74}
+                        className="w-[180px] lg:w-[12.8vw] lg:h-[5.139vw] max-w-[184.32px] max-h-[74px]"
+                        loading="lazy"
+                    />
+                </button>
 
                 <div className="flex gap-4 lg:gap-[0.83vw]">
                     {socials.map((social) => (
@@ -53,7 +66,14 @@ export default function Footer_Section() {
             </div>
 
             <div className=" w-full flex justify-center items-center py-[20px] border-t-[1px] border-brand-white-translucent">
-                <img src="/RR_logo.svg" alt="RR Logo mark" className="h-[32px] w-[40px] lg:h-[2.22vw] lg:w-[2.78vw] max-h-[32px] max-w-[40px]" />
+                <Image
+                    src="/RR_logo.svg"
+                    alt="RR Logo mark"
+                    width={40}
+                    height={32}
+                    className="h-[32px] w-[40px] lg:h-[2.22vw] lg:w-[2.78vw] max-h-[32px] max-w-[40px]"
+                    loading="lazy"
+                />
             </div>
         </div>
     );

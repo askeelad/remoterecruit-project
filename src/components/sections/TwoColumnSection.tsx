@@ -1,6 +1,6 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import TextPanel from "../Textpanel";
 
 interface TwoColumnSectionProps {
@@ -26,7 +26,14 @@ export default function TwoColumnSection({
         }`}
     >
       <TextPanel label={label} title={title} description={description} />
-      <img src={imageSrc} className="w-full h-auto max-w-[454px] lg:w-[clamp(250px,31.53vw,454px)] lg:h-[clamp(248px,31.32vw,451px)] object-contain" alt={imageAlt} />
+      <Image
+        src={imageSrc}
+        className="w-full h-auto max-w-[454px] lg:w-[clamp(250px,31.53vw,454px)] lg:h-[clamp(248px,31.32vw,451px)] object-contain"
+        alt={imageAlt || "Section Illustration"}
+        width={454}
+        height={451}
+        loading="lazy"
+      />
     </div>
   );
 }

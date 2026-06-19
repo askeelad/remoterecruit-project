@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import Banner_background from "../Banner_background";
 import Icon from "../Icon_Component";
 
@@ -9,7 +10,14 @@ export default function Banner_section() {
             <div className="w-full lg:aspect-[1440/610] relative " >
                 <div className="w-full h-full flex flex-col gap-6 lg:flex-row py-8 lg:py-0 lg:gap-0">
                     <div className="flex-1 w-full lg:w-1/2 lg:pt-[100px] self-start">
-                        <img src="/signup.png" alt="Signup Illustration" className="w-full h-full object-contain object-left-top rounded-tr-[40px] overflow-hidden" />
+                        <Image
+                            src="/signup.png"
+                            alt="Signup Illustration"
+                            width={720}
+                            height={600}
+                            className="w-full h-full object-contain object-left-top rounded-tr-[40px] overflow-hidden"
+                            loading="lazy"
+                        />
                     </div>
                     <div className="flex flex-1 w-full lg:w-1/2 items-center justify-center px-[5vw] lg:px-0">
                         <div className="flex flex-col gap-[clamp(24px,2.5vw,36px)]">
