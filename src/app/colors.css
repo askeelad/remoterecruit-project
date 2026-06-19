@@ -1,0 +1,25 @@
+@theme {
+  --color-brand-blue: #1E3E85;
+  --color-brand-cyan: #52B4DA;
+  --color-brand-light-blue: #336DA6;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-white: #ffffff;
+  --color-background-white: #fcfdfe;
+
+  --color-brand-cyan-light: #C9EFFF;
+  --color-brand-black: #000000;
+  --color-brand-blue-soft: #ecf2ff;
+  --color-brand-cyan-soft: #C2EEFF;
+  --color-brand-gray-text: #959AAC;
+  --color-brand-gray-feature: #90919E;
+  --color-brand-blue-gradient-start: #2b6cb0;
+  --color-brand-blue-gradient-end: #1a365d;
+  --color-brand-footer-icon-bg: #3e65a5;
+  --color-brand-white-translucent: #ffffff50;
+  --color-brand-cyan-medium: #49A0C6;
+  --color-brand-foreground: #171717;
+
+  /* Banner specific colors */
+  --color-brand-blue-accent: #4572CB;
+  --color-brand-gray-muted: #767784;
+}

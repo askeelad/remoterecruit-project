@@ -1,0 +1,48 @@
+[
+  {
+    "price": "Free",
+    "badgeTitle": "Basic",
+    "paidPackage": false,
+    "features": [
+      {
+        "text": "1 Active Job",
+        "included": true
+      },
+      {
+        "text": "Basic List Placement",
+        "included": true
+      },
+      {
+        "text": "Unlimited Job Applicants",
+        "included": false
+      },
+      {
+        "text": "Invite Anyone to Apply",
+        "included": false
+      }
+    ]
+  },
+  {
+    "price": "$199",
+    "badgeTitle": "Per Month",
+    "paidPackage": true,
+    "features": [
+      {
+        "text": "Unlimited Active Jobs",
+        "included": true
+      },
+      {
+        "text": "Premium List Placement",
+        "included": true
+      },
+      {
+        "text": "Unlimited Job Applicants",
+        "included": true
+      },
+      {
+        "text": "Invite Anyone to Apply",
+        "included": true
+      }
+    ]
+  }
+]

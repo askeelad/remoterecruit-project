@@ -1,0 +1,26 @@
+[
+  {
+    "name": "facebook",
+    "url": "https://facebook.com"
+  },
+  {
+    "name": "instagram",
+    "url": "https://instagram.com"
+  },
+  {
+    "name": "x",
+    "url": "https://x.com"
+  },
+  {
+    "name": "twitter",
+    "url": "https://twitter.com"
+  },
+  {
+    "name": "linkedin",
+    "url": "https://linkedin.com"
+  },
+  {
+    "name": "snapchat",
+    "url": "https://snapchat.com"
+  }
+]

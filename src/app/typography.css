@@ -1,0 +1,74 @@
+@layer components {
+  .heading-1 {
+    font-size: clamp(36px, 3.68vw, 53px);
+    @apply font-bold text-center leading-tight tracking-tight;
+  }
+  .heading-2 {
+    font-size: clamp(28px, 2.78vw, 40px);
+    @apply font-semibold leading-tight lg:max-w-[550px];
+  }
+  .subtitle {
+    font-size: clamp(16px, 1.39vw, 20px);
+    @apply font-normal w-full max-w-[840px] text-center leading-[1.6] text-white/90;
+  }
+  .paragraph {
+    font-size: clamp(15px, 1.32vw, 19px);
+    @apply text-brand-gray-text leading-relaxed lg:max-w-[500px];
+  }
+
+  /* Exact UI match tokens for refactoring */
+  .card-price {
+    font-size: clamp(20px, 2.22vw, 32px);
+    @apply font-semibold;
+  }
+  .card-price-mobile {
+    @apply text-[32px] font-semibold;
+  }
+
+  .card-badge {
+    font-size: clamp(14px, 1.38vw, 20px);
+    @apply font-medium;
+  }
+  .card-badge-mobile {
+    @apply text-[16px] font-medium;
+  }
+
+  .card-feature {
+    font-size: clamp(12px, 1.11vw, 16px);
+  }
+  .card-feature-mobile {
+    @apply text-[14px] font-medium;
+  }
+
+  .card-title {
+    font-size: clamp(12px, 1.11vw, 16px);
+    @apply font-semibold;
+  }
+  .card-title-mobile {
+    @apply text-[13px] font-semibold;
+  }
+
+  .faq-question {
+    @apply text-[18px] lg:text-[19px] font-semibold;
+  }
+  .faq-answer {
+    @apply text-[15px] lg:text-[18px] leading-relaxed;
+  }
+
+  .banner-label {
+    font-size: clamp(12px, 1.11vw, 16px);
+    @apply font-semibold;
+  }
+  .banner-heading {
+    font-size: clamp(32px, 3.05vw, 44px);
+    @apply leading-[1.2] font-semibold;
+  }
+  .banner-paragraph {
+    font-size: clamp(14px, 1.25vw, 18px);
+    @apply leading-[1.8] font-normal;
+  }
+  .banner-btn-text {
+    font-size: clamp(12px, 1.11vw, 16px);
+    @apply font-medium;
+  }
+}
